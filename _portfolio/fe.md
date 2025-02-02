@@ -10,3 +10,15 @@ Tekst her
 print("Hello World!")
 ```
 
+Ny kodeblok:
+
+<div class="code-container">
+    <div class="code-header">
+        <div class="circle red"></div>
+        <div class="circle yellow"></div>
+        <div class="circle green"></div>
+    </div>
+    <pre><code class="language-python">
+print("Hello World!")
+    </code></pre>
+</div>

@@ -125,6 +125,10 @@ Dekrypteret besked (Salsa20): Godt klaret! Hvis du har mod på mere, så send os
 ---  
 Dette viser løsningen på krypteringsudfordringen fra FE ved hjælp af RSA, SHA-256 og Salsa20.
 
+<blockquote style="color: red; background-color: lightgray; padding: 10px; border-left: 5px solid red;">
+    Dette er en farvet blockquote.
+</blockquote>
+
 
 \\[
 m = c^d \mod N

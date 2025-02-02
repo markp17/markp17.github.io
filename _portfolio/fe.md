@@ -52,5 +52,5 @@ En anden blok:
 
 Test med billede:
 
-![En kodeblok](./images/code_example_fe.png)
+![En kodeblok](/images/code_example_fe.png)
 

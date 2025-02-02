@@ -58,13 +58,18 @@ Test med billede:
 ## RSA og matematisk notation
 
 RSA-kryptering bygger på eksponentiation modulo et stort primtalprodukt.  
-Den offentlige nøgle består af et modulus \( N \) og en eksponent \( e \), og kryptering af en besked \( m \) sker som:
+Den offentlige nøgle består af et modulus \\( N \\) og en eksponent \\( e \\), og kryptering af en besked \\( m \\) sker som:
 
-\[
+\\[
 c = m^e \mod N
-\]
+\\]
 
-For at dekryptere bruger vi den private nøgle \( d \), der opfylder:
+For at dekryptere bruger vi den private nøgle \\( d \\), der opfylder:
+
+\\[
+m = c^d \mod N
+\\]
+
 
 \[
 m = c^d \mod N

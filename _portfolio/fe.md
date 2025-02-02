@@ -9,3 +9,8 @@ Tekst her
 ```python
 print("Hello World!")
 ```
+
+Ny kodeblok
+<pre class="line-numbers"><code class="language-python">
+print("Hello World!")
+</code></pre>

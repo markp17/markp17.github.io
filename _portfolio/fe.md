@@ -70,7 +70,3 @@ For at dekryptere bruger vi den private nøgle \\( d \\), der opfylder:
 m = c^d \mod N
 \\]
 
-
-\[
-m = c^d \mod N
-\]

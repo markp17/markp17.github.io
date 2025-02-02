@@ -19,6 +19,20 @@ Ny kodeblok:
         <div class="circle green"></div>
     </div>
     <pre><code class="language-python">
-print("Hello World!")
+import hashlib
+
+from Crypto.Cipher import Salsa20
+
+# Givet data fra udfordringen
+x = 322
+y = 1333
+
+# Beregn p, q, N og phi(N)
+p = pow(x, 43) + pow(y, 5)
+q = pow(x, 86) - pow(y, 5) * pow(x, 43) + pow(y, 10)
+N = p * q
+e = pow(2,16)+1
+phi_n = (p - 1) * (q - 1)
+d = pow(e, -1, phi_n)
     </code></pre>
 </div>

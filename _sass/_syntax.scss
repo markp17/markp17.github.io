@@ -161,11 +161,13 @@ div.highlighter-rouge, figure.highlight {
     background: transparent !important;
     color: #ffffff !important;
     font-size: 14px !important;
-    padding: 0 !important;  /* Fjerner ekstra padding */
+    padding: 5px !important;  /* Mindre padding */
     border-radius: 5px !important;
     line-height: 1.2 !important; /* Mindre afstand mellem linjer */
     margin: 0 !important; /* Fjern ekstra luft */
-    display: inline-block !important; /* Undgå, at den fylder hele skærmen */
-    width: auto !important; /* Undgå unødig bredde */
-    min-width: 100px; /* Sørg for at det ikke bliver for småt */
+    display: inline-block !important; /* Sikrer, at det ikke fylder hele skærmen */
+    width: auto !important;
+    min-width: 100px; /* Sørger for, at det ikke bliver for smalt */
+    min-height: 24px !important; /* Sørger for, at en enkelt linje ikke ser for stor ud */
 }
+

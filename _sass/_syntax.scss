@@ -123,26 +123,21 @@ div.highlighter-rouge, figure.highlight {
 .highlight .vi { color: #22b3eb } /* Name.Variable.Instance */
 .highlight .il { color: #2aa198 } /* Literal.Number.Integer.Long */
 
-
 .code-container {
     background: #1e1e1e; /* Mørk baggrund */
     color: #ffffff;
-    padding: 5px !important; /* Mindre padding for at reducere størrelsen */
+    padding: 20px;
     border-radius: 10px;
     font-family: "Fira Code", monospace;
     position: relative;
     overflow: auto;
     box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.3);
-    margin: 0 auto !important; /* Centrer kodeblokken og fjern ekstra luft */
-    display: inline-block !important; /* Sørger for, at den ikke fylder hele bredden */
-    max-width: 100% !important; /* Undgå at den bliver for bred */
-    width: auto !important; /* Sikrer at den ikke bliver for stor */
 }
 
 .code-header {
     display: flex;
     align-items: center;
-    padding-bottom: 5px; /* Reduceret padding */
+    padding-bottom: 10px;
 }
 
 .code-header .circle {
@@ -156,18 +151,12 @@ div.highlighter-rouge, figure.highlight {
 .code-header .yellow { background: #ffbd2e; }
 .code-header .green { background: #27c93f; }
 
-/* SPECIFIK styling af kodeblokken */
-.code-container pre {
-    background: transparent !important;
-    color: #ffffff !important;
-    font-size: 14px !important;
-    padding: 5px !important;  /* Mindre padding */
-    border-radius: 5px !important;
-    line-height: 1.2 !important; /* Mindre afstand mellem linjer */
-    margin: 0 !important; /* Fjern ekstra luft */
-    display: inline-block !important; /* Sikrer, at det ikke fylder hele skærmen */
-    width: auto !important;
-    min-width: 100px; /* Sørger for, at det ikke bliver for smalt */
-    min-height: 24px !important; /* Sørger for, at en enkelt linje ikke ser for stor ud */
+pre {
+    background: transparent;
+    color: #ffffff;
+    font-size: 14px;
+    padding: 10px;
+    border-radius: 5px;
 }
+
 

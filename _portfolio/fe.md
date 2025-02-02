@@ -6,22 +6,22 @@ collection: portfolio
 
 
 **Resume**  
-I denne rapport præsenteres løsningen på en krypteringsudfordring udgivet af  
-Forsvarets Efterretningstjeneste.  
-Opgaven bestod i at analysere og afkode en krypteret besked ved hjælp af RSA og en passende stream cipher.  
+I denne rapport præsenteres løsningen på en krypteringsudfordring udgivet af **Forsvarets Efterretningstjeneste**. Opgaven bestod i at analysere og afkode en krypteret besked ved hjælp af RSA og en passende stream cipher. 
 
-**Løsningen involverede følgende trin:**  
-- Beregning af RSA-parametre (*N*, *e*, og *d*) og udledning af en hemmelig nøgle (*key*).  
-- Validering af nøglen ved hjælp af opgavens betingelser (*key mod 254 = 204*).  
-- Identifikation af en passende stream cipher (*Salsa20*), der understøtter en 256-bit nøgle og en 64-bit nonce.  
-- Dekryptering af beskeden ved at anvende en SHA-256-hash af nøglen som input til *Salsa20*.  
+Løsningen involverede følgende trin:
 
-Den endelige besked blev succesfuldt dekrypteret som:  
-> *"Godt klaret! Hvis du har mod på mere, så send os en ansøgning. Vi glæder os til at høre fra dig."*  
+ - Beregning af RSA-parametre (`N, e, d`) og udledning af en hemmelig nøgle (`key`)
+- Validering af nøglen ved hjælp af opgavens betingelser `key mod 254 = 204`.
+- Identifikation af en passende stream cipher (`Salsa20`), der understøtter en 256-bit nøgle og en 64-bit nonce.
+- Dekryptering af beskeden ved at anvende `SHA-256` hash af nøglen som input til `Salsa20`.
 
-Rapporten dokumenterer processen, valg af algoritmer og de anvendte metoder i detaljer.  
+Den endelige besked blev succesfuldt dekrypteret som:
 
----  
+> *Godt klaret! Hvis du har mod på mere, så send os en ansøgning. Vi glæder os til at høre fra dig.*
+
+Rapporten dokumenterer processen, valg af algoritmer og de anvendte metoder i detaljer.
+
+ ---
 
 ### Forsvarets Efterretningstjeneste - Udfordringen  
 Forsvarets Efterretningstjeneste har i et jobopslag lavet en ny udfordring i kryptering. I jobopslaget ses blandt andet følgende billede:  

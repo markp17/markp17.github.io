@@ -170,3 +170,19 @@ div.highlighter-rouge, figure.highlight {
     min-height: 24px !important; /* Sørger for, at en enkelt linje ikke ser for stor ud */
 }
 
+/* Sikrer, at Rouge-styling også gælder for tilpassede kodeblokke */
+.code-container pre, .code-container code {
+    background: #1e1e1e !important;
+    color: #ffffff !important;
+    font-size: 14px !important;
+    padding: 10px;
+    border-radius: 5px;
+    line-height: 1.4;
+    overflow-x: auto;
+    margin: 0;
+}
+
+/* Gør, at dine <pre><code> blokke får samme farver som Rouge */
+.code-container span.k { color: #569CD6; } /* Keywords */
+.code-container span.s { color: #D69D85; } /* Strings */
+.code-container span.p { color: #CCCCCC; } /* Parentheses */

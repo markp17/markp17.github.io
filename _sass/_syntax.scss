@@ -153,11 +153,12 @@ div.highlighter-rouge, figure.highlight {
 .code-header .green { background: #27c93f; }
 
 pre {
-    background: transparent;
-    color: #ffffff;
-    font-size: 14px;
-    padding: 5px;  /* Mindre padding */
-    border-radius: 5px;
-    line-height: 1.4; /* Reducer linjeafstand */
+    background: transparent !important;
+    color: #ffffff !important;
+    font-size: 14px !important;
+    padding: 5px !important;
+    border-radius: 5px !important;
+    line-height: 1.4 !important;
 }
+
 

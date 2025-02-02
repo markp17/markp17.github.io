@@ -18,28 +18,4 @@
 <!-- For all browsers -->
 <link rel="stylesheet" href="{{ base_path }}/assets/css/main.css">
 
-
-<script>
-document.addEventListener('DOMContentLoaded', function () {
-    document.querySelectorAll('pre.highlight').forEach((codeBlock) => {
-        const button = document.createElement('button');
-        button.innerText = 'Kopier';
-        button.classList.add('copy-button');
-
-        button.addEventListener('click', () => {
-            const code = codeBlock.innerText;
-            navigator.clipboard.writeText(code).then(() => {
-                button.innerText = 'Kopieret!';
-                setTimeout(() => (button.innerText = 'Kopier'), 2000);
-            });
-        });
-
-        codeBlock.appendChild(button);
-    });
-});
-</script>
-
-
-
-
 <meta http-equiv="cleartype" content="on">

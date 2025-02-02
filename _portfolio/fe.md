@@ -49,3 +49,8 @@ En anden blok:
     </div>
     <pre class="language-python"><code class="language-python">print("Hello World!")</code></pre>
 </div>
+
+Test med billede:
+
+![En kodeblok](./images/code_example_fe.png)
+

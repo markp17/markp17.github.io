@@ -5,7 +5,7 @@ collection: portfolio
 ---
 
 
-**# Resume**  
+**Resume**  
 I denne rapport præsenteres løsningen på en krypteringsudfordring udgivet af  
 Forsvarets Efterretningstjeneste.  
 Opgaven bestod i at analysere og afkode en krypteret besked ved hjælp af RSA og en passende stream cipher.  

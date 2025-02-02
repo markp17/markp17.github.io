@@ -48,6 +48,5 @@ En anden blok:
         <div class="circle green"></div>
     </div>
     <pre><code class="language-python">
-print("Hello World!")
-    </code></pre>
+print("Hello World!") </code></pre>
 </div>

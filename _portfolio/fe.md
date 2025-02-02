@@ -47,6 +47,5 @@ En anden blok:
         <div class="circle yellow"></div>
         <div class="circle green"></div>
     </div>
-    <pre><code class="language-python">
-print("Hello World!") </code></pre>
+    <pre><code class="language-python"> print("Hello World!") </code></pre>
 </div>

@@ -122,3 +122,28 @@ div.highlighter-rouge, figure.highlight {
 .highlight .vg { color: #22b3eb } /* Name.Variable.Global */
 .highlight .vi { color: #22b3eb } /* Name.Variable.Instance */
 .highlight .il { color: #2aa198 } /* Literal.Number.Integer.Long */
+
+
+/* Custom styling for code blocks */
+pre {
+    background: #2d2d2d; /* Mørk baggrund */
+    color: #ffffff; /* Hvid tekst */
+    padding: 15px;
+    border-radius: 8px; /* Afrundede hjørner */
+    overflow: auto;
+    position: relative;
+    font-family: "Fira Code", monospace;
+}
+
+pre code {
+    font-size: 14px;
+}
+
+.line-numbers {
+    padding-left: 40px; /* Plads til linjenumre */
+}
+
+.line-numbers .line-numbers-rows {
+    border-right: 1px solid #555; /* Linje mellem kode og numre */
+}
+

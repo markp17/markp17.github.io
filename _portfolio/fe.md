@@ -5,7 +5,7 @@ collection: portfolio
 ---
 
 
-### Resume
+**Resume**
 
 I denne rapport præsenteres løsningen på en krypteringsudfordring udgivet af **Forsvarets Efterretningstjeneste**. Opgaven bestod i at analysere og afkode en krypteret besked ved hjælp af RSA og en passende stream cipher. 
 
@@ -23,7 +23,7 @@ Den endelige besked blev succesfuldt dekrypteret som:
 Rapporten dokumenterer processen, valg af algoritmer og de anvendte metoder i detaljer.
 
  ---
- ### Forsvarets Efterretningstjeneste - Udfordringen
+ **Forsvarets Efterretningstjeneste - Udfordringen**
  Forsvarets Efterretningstjeneste har i et jobopslag lavet en ny udfordring i kryptering. I jobopslaget ses blandt andet følgende billede ([https://www.fe-ddis.dk/da/karriere/krypto-profiler/](https://www.fe-ddis.dk/da/karriere/krypto-profiler/))
  
 ![FE-krypto-artikel](/images/fe_krypto_artikel.jpg)   
@@ -81,12 +81,15 @@ Det betyder at `p = x^43 + y^5` og `q = x^86 - y^5 * x^43 + y^10`.
 
 Ved at bruge `Python`, så regnes værdierne af `p` og `q`, hvorfra `N` kan bestemmes. 
 
- Dertil kan det bruges at `e = 2^16 + 1`, da Eulers totientfunktion $\phi(N) = (p - 1)(q-1)$, hvorfra man har at 
- $d \cdot e \equiv 1 \mod \phi(N)$, hvilket leder til at $d \equiv e^{-1} \mod \phi(N)$.
+ Dertil kan det bruges at `e = 2^16 + 1`, da Eulers totientfunktion \\[\phi(N) = (p - 1)(q-1)]\\, hvorfra man har at 
+ \\[d \cdot e \equiv 1 \mod \phi(N)]\\, hvilket leder til at \\[d \equiv e^{-1} \mod \phi(N)]\\.
  
  Ved brug af `Python` opnås:
+ 
  **INDSÆT KODEBLOK**
+ 
  Og tilhørende output:
+ 
  **INDSÆT OUTPUT**
 
 Dermed er det offentlige nøglepar `(N, e)` fundet.
@@ -95,9 +98,12 @@ Det er nu muligt at finde `key`, da det er givet at `key = 1337^d mod N`. Ved at
 
 Ved at eksekvere følgende kode i `Python`:
 
+
 **INDSÆT KODE**
 
+
 Så fås:
+
 
 **INDSÆT OUTPUT**
 
@@ -159,11 +165,15 @@ Ved at bruge `Python` og biblioteket `Crypto.Cipher`, så kan `Salsa20` implemen
 
 `Salsa20` kan dermed initialiseres ved følgende kode:
 
+
 **INDSÆT KODEBLOK**
+
 
 Og dekrypteringen kan dermed eksekveres ved følgende:
 
+
 **INDSÆT KODEBLOK**
+
 
 Dette resulterer i, at den oprindelige besked nu er dekrypteret og udfordringen fra **Forsvarets Efterretningstjeneste** er løst:
 

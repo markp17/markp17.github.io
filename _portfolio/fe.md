@@ -81,8 +81,17 @@ Det betyder at `p = x^43 + y^5` og `q = x^86 - y^5 * x^43 + y^10`.
 
 Ved at bruge `Python`, så regnes værdierne af `p` og `q`, hvorfra `N` kan bestemmes. 
 
- Dertil kan det bruges at `e = 2^16 + 1`, da Eulers totientfunktion \\[ \phi(N) = (p - 1)(q-1)\\], hvorfra man har at 
- \\[d \cdot e \equiv 1 \mod \phi(N)\\], hvilket leder til at \\[d \equiv e^{-1} \mod \phi(N)\\].
+Dertil kan det bruges at `e = 2^16 + 1`, da man har Eulers totientfunktion:
+ 
+ \\[ \phi(N) = (p - 1)(q-1)\\]
+ 
+ hvorfra man har at 
+ 
+ \\[d \cdot e \equiv 1 \mod \phi(N)\\]
+ 
+ hvilket leder til at
+ 
+ \\[d \equiv e^{-1} \mod \phi(N)\\].
  
  Ved brug af `Python` opnås:
  
